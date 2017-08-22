@@ -57,6 +57,8 @@ import {
   setFeedback
 } from './redux/instructions';
 
+import experiments from './util/experiments';
+
 var copyrightStrings;
 
 /**
@@ -1445,6 +1447,10 @@ StudioApp.prototype.displayFeedback = function (options) {
     // redux
     const message = this.feedback_.getFeedbackMessage(options);
     getStore().dispatch(setFeedback({ message }));
+  }
+
+  if (experiments.isEnabled('onetimeHintPrompt')) {
+    this.authoredHintsController_.considerShowingOnetimeHintPrompt();
   }
 };
 
