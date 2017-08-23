@@ -71,7 +71,7 @@ group :development, :test do
   # For unit testing.
   gem 'webmock', require: false
 
-  gem 'codecov', require: false
+  gem 'codecov',  '~> 0.1.10', require: false
   gem 'fake_sqs'
   gem 'fakeredis', require: false
   gem 'mocha', require: false

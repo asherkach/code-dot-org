@@ -227,7 +227,7 @@ GEM
       activesupport (>= 3.0)
     cocaine (0.5.8)
       climate_control (>= 0.0.3, < 1.0)
-    codecov (0.1.9)
+    codecov (0.1.10)
       json
       simplecov
       url
@@ -744,7 +744,7 @@ DEPENDENCIES
   cancancan (~> 1.15.0)
   chromedriver-helper (~> 0.0.7)
   chronic (~> 0.10.2)
-  codecov
+  codecov (~> 0.1.10)
   codemirror-rails
   colorize
   composite_primary_keys

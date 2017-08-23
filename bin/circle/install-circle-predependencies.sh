@@ -21,3 +21,6 @@ sudo apt-get install yarn=0.23.2-1
 # CircleCI on Ubuntu 14 installs yarn 0.18.1 and has it early in the $PATH.
 # Remove it so we can use the version of yarn we installed above.
 rm /home/ubuntu/.yarn/bin/yarn
+
+# Install GhostScript (for ImageMagick)
+sudo apt-get install ghostscript
