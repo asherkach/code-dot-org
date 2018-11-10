@@ -338,11 +338,6 @@ Style/StderrPuts:
 Style/TernaryParentheses:
   Enabled: false
 
-# Offense count: 1
-# Cop supports --auto-correct.
-Style/TrailingMethodEndStatement:
-  Enabled: false
-
 # Offense count: 64
 # Cop supports --auto-correct.
 # Configuration parameters: AllowNamedUnderscoreVariables.
