@@ -4,12 +4,17 @@ class StringSerializer < ActiveModel::Serializer
     @object.to_s
   end
 end
-class IntegerSerializer < StringSerializer; end
+
+class IntegerSerializer < StringSerializer
+end
+
 class HashSerializer < ActiveModel::Serializer
   def attributes(obj)
     @object.as_json
   end
 end
-class ActiveModel::ErrorsSerializer < HashSerializer; end
+
+class ActiveModel::ErrorsSerializer < HashSerializer
+end
 
 ActiveModel::Serializer.config.adapter = :Json
